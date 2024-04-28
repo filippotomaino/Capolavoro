@@ -1,0 +1,368 @@
+@font-face {
+    font-family: ballet;
+    src: url(Ballet/Ballet-Regular-VariableFont_opsz.ttf);
+}
+
+@font-face {
+    font-family: nabla;
+    src: url(Nabla/Nabla-Regular-VariableFont_EDPT\,EHLT.ttf);
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(Ubuntu/Ubuntu-Regular.ttf);
+} 
+
+@font-face {
+    font-family: italic-ubuntu;
+    src: url(Ubuntu/Ubuntu-Italic.ttf);
+} 
+
+@font-face {
+    font-family: bold-ubuntu;
+    src: url(Ubuntu/Ubuntu-Bold.ttf);
+} 
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+}
+
+* {
+    font-family: ubuntu;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: auto;
+}
+
+header {
+    color: #F2F4F3;
+    padding: 5% 10%;
+    background-image: url(images/foto1.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.container-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    transition: all 1s;
+    cursor: pointer;
+    background-image: url("images/profile.jpg");
+    background-position: center;
+    height: 3rem;
+    width: 3rem;
+    margin-inline: 0.5rem;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.logo:hover {
+    rotate: 360deg;
+}
+
+.fa {
+    transition: all 1s;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    display: inline;
+    text-decoration: none;
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-inline: 5px;
+    text-align: center;
+}
+
+.fa:hover {
+    transition: all 0.3s;
+    transform: translateY(-4px);
+}
+
+.fa-pinterest {
+    background-color: #cb2027;
+}
+
+.fa-instagram {
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background-color: #3B5998;
+}
+
+.fa-facebook {
+    background-color: #1e3050;
+}
+
+.fa-snapchat {
+    background-color: #fffc00;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.container-text {
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 1.2rem;
+}
+
+.container-text div:first-child {
+    color: rgb(240, 162, 2);
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-family: nabla;
+}
+
+.button {
+    transition: all 0.3s;
+    color: #0A0908;
+    margin-top: 20px;
+    background-color: rgb(240, 162, 2);
+    text-decoration: none;
+    border: none;
+    padding-inline: 25px;
+    padding-block: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.button:hover {
+    transition: all 0.3s;
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 3px white;
+    color: white;
+}
+
+.container-game {
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 40px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    font-size: 40px;
+}
+
+select {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container-game button {
+    transition: all 0.3s;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(240, 162, 2);
+}
+
+.container-game button:hover {
+    transition: all 0.3s;
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 3px white;
+    color: white;
+}
+
+img, #result{
+    display: none;
+}
+
+main {
+    color: #F2F4F3;
+    background-color: #0A0908;
+    padding: 5%;
+}
+
+.title {
+    text-align: center;
+    color: rgb(240, 162, 2);
+    margin-bottom: 5%;
+}
+
+#images-descriptions {
+    display: flex;
+    justify-content: center;
+}
+
+.img-and-desc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    transition: all 0.3s;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+#i1 {
+    background-image: url("images/foto3.jpg");
+}
+
+#i2 {
+    background-image: url("images/foto4.jpg");
+}
+
+#i3 {
+    background-image: url("images/foto5.jpg");
+}
+
+#i4 {
+    background-image: url("images/foto6.jpg");
+}
+
+.img:hover {
+    transition: all 0.3s;
+    box-shadow: 3px 3px rgb(240, 162, 2);
+    transform: translate(-3px, -3px);
+}
+
+.description {
+    color: #F2F4F3;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+    width: 70%;
+}
+
+nav {
+    background-color: #F2F4F3;
+    padding: 7%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.quote {
+    font-family: italic-ubuntu;
+    font-size: 30px;
+    width: 70%;
+}
+
+#signature {
+    font-family: italic-ubuntu;
+    position: absolute;
+    bottom: 25%;
+    right: 15%
+}
+
+section {
+    color: #F2F4F3;
+    display: flex;
+    justify-content: center;
+}
+
+.container-signin {
+    background-color: rgb(240, 162, 2);
+    width: 50%;
+    color: #0A0908;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#question {
+    font-size: 12px;
+}
+
+#call-to-action {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: bold-ubuntu;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insert{
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #0A0908;
+}
+
+input:nth-of-type(3) {
+    margin-bottom: 2rem;
+}
+
+#submit {
+    padding-inline: 25px;
+    padding-block: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    background-color: #0A0908;
+    color: #F2F4F3;
+    transition: all 0.3s;
+
+}
+
+#submit:hover {
+    transition: all 0.3s;
+    transform: translate(-3px, -3px);
+    background-color: #F2F4F3;
+    color: #0A0908;
+    box-shadow: 3px 3px #0A0908;
+}
+
+.image {
+    background-size: cover;
+    background-image: url("images/foto2.jpg");
+    background-position: center;
+    opacity: 0.8;
+    width: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: #0A0908;
+    color: #F2F4F3;
+    text-align: center;
+    font-size: 25px;
+}
+
+footer span {
+    font-family: ballet;
+}

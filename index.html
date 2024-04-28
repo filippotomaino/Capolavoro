@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web</title>
+</head>
+<body>
+    <header>
+        <div class="container-profile">    
+            <a href="https://www.instagram.com/" class="fa-instagram fa"></a>
+            <a href="https://www.snapchat.com/" class="fa-snapchat fa"></a>
+            <div class = "logo"></div>
+            <a href="https://www.facebook.com/" class="fa-facebook fa"></a>
+            <a href="https://www.pinterest.com/" class="fa-pinterest fa"></a>
+        </div>
+
+        <div class="container">
+            <div class="container-text"> 
+                <div>This website is <br> awesome</div>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta pariatur repellat eaque dolorum eveniet?</div>
+                <input type="button" id="ciao" class="button" value="Sign up">
+            </div>
+    
+            <div class="container-game">
+                <span id="title">Tenta la fortuna!</span>
+                <span id="result"></span>
+                    <div>
+                        <select>
+                            <option>Testa</option>
+                            <option>Croce</option>
+                        </select>
+    
+                        <button id="vai">Vai !</button>
+                    </div>
+
+                    <img id="testa" src="images/icons8-cabeza-de-mujer-50.png" width="70px" height="70px">
+                    <img id="croce" src="images/icons8-cross-60.png" width="70px" height="70px">
+            </div>
+        </div> 
+    </header>
+
+    <main>
+        <div class="title"><h2>Some random information</h2></div>
+
+        <div id="images-descriptions">
+            <div class="img-and-desc-container">
+                <div class="img" id="i1" onclick="change()"></div>
+                <div class="description">This is some subtext under an illustration or image</div>
+            </div>
+    
+            <div class="img-and-desc-container">
+                <div class="img" id="i2"></div>
+                <div class="description">This is some subtext under an illustration or image</div>
+            </div>
+    
+            <div class="img-and-desc-container">
+                <div class="img" id="i3"></div>
+                <div class="description">This is some subtext under an illustration or image</div>
+            </div>
+                
+            <div class="img-and-desc-container">
+                <div class="img" id="i4"></div>
+                <div class="description">This is some subtext under an illustration or image</div>
+            </div>
+        </div>
+    </main>
+
+    <nav>
+        <div class="quote">"If you think you are too small to be effective, you have never been in the dark with a mosquito."</div>
+        <div id="signature">Unknown</div>
+    </nav>
+
+    <section>
+        <div class="container-signin">
+            <div id="question">What are you waiting for?</div>
+            <div id="call-to-action">Sign in</div>
+            
+            <form name="myForm" action="login.php" method="POST">
+                <input type="text" name="name" class="insert" placeholder="Insert your name:">
+                <input type="text" name="email" class="insert" placeholder="Insert your email:">
+                <input type="text" name="password" class="insert" placeholder="Insert your password:">
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="image"></div>
+    </section>
+
+    <footer>
+        <span>The Final Project</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
